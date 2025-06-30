@@ -1,0 +1,7 @@
+FastAPI
+pydantic
+httpx
+python-dotenv
+retry
+gemini-sdk  
+sqlite3     

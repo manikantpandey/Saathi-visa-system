@@ -1,0 +1,21 @@
+resources:
+  - name: saathi-genai-query-parser
+    type: WebApp
+    apiVersion: 2021-01-15
+    location: [YOUR_AZURE_REGION]
+    properties:
+      serverFarmId: [YOUR_APP_SERVICE_PLAN_ID]
+      siteConfig:
+        appSettings:
+          - name: "WEBSITE_RUN_FROM_PACKAGE"
+            value: "1"
+          - name: "GEMINI_API_KEY"
+            value: "[YOUR_GEMINI_API_KEY]"
+          - name: "DATABASE_URL"
+            value: "[YOUR_DATABASE_URL]"
+      httpsOnly: true
+
+outputs:
+  webAppUrl:
+    type: string
+    value: "[concat('https://', variables('webAppName'), '.azurewebsites.net')]"

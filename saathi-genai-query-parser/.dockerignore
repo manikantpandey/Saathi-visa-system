@@ -1,0 +1,15 @@
+# This file specifies files and directories to be ignored when building the Docker image, helping to reduce the image size.
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+*.db
+*.sqlite3
+*.log
+tests/
+venv/
+*.egg-info/
+dist/
+build/
+docker-compose.yml
