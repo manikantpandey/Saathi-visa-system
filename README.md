@@ -51,7 +51,7 @@ saathi-genai-query-parser/
 
 1. **Clone the repository:**
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/manikantpandey/Saathi-visa-system.git
    cd saathi-genai-query-parser
    ```
 
